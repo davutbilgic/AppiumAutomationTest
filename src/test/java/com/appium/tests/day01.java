@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class TestRunnerAppium {
+public class day01 {
 
     private AppiumDriver<MobileElement> driver;
 
@@ -23,8 +23,8 @@ public class TestRunnerAppium {
         try {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
-            desiredCapabilities.setCapability(MobileCapabilityType.VERSION, "8.1");
-            desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2");
+            desiredCapabilities.setCapability(MobileCapabilityType.VERSION, "9");
+            desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_3");
 
 //            //to specify app for testing
 //            //it can be on your computer or somewhere in cloud
@@ -58,11 +58,11 @@ public class TestRunnerAppium {
             //we use android phone
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
             //version of android
-            desiredCapabilities.setCapability(MobileCapabilityType.VERSION, "8.1");
+            desiredCapabilities.setCapability(MobileCapabilityType.VERSION, "9");
             //name of the device, if it is real device we need to pass UUID parameter
-            desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2");
+            desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_3");
             //
-            desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+//            desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");//muhtemelen eski versionlar icin
 
             //either you specify app --> //path/to/app.apk
             //or if app is already installed, you need to specify appActivity and appPackage
@@ -139,12 +139,12 @@ public class TestRunnerAppium {
             //we use android phone
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
             //version of android
-            desiredCapabilities.setCapability(MobileCapabilityType.VERSION, "8.1");
+            desiredCapabilities.setCapability(MobileCapabilityType.VERSION, "9");
             //name of the device, if it is real device we need to pass UUID parameter
-            desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2");
+            desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_3");
 
             //derste hata vermisti bu yuzden ogretmen bunu ekledi bende hata vermemesine ragmen ekledim. appium versionla ilgili olabilir.
-            desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+//            desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 
 //            //to specify app for testing
 //            //it can be on your computer or somewhere in cloud
@@ -191,7 +191,7 @@ public class TestRunnerAppium {
 
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
         desiredCapabilities.setCapability(MobileCapabilityType.VERSION,"11.1");
-        //we used real device, i get this UUID number from terminal with typing "adb devices"
+        //we used real device, I get this UUID number from terminal with typing "adb devices"
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"B6BUB6TOBMWO9SJB");//UUID number B6BUB6TOBMWO9SJB
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
 //        //to specfiy app for testing
