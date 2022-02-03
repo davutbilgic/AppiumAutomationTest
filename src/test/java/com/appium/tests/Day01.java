@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class day01 {
+public class Day01 {
 
     private AppiumDriver<MobileElement> driver;
 
